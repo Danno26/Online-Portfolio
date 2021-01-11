@@ -19,7 +19,7 @@ header {
 
 header h1 {
     font: 1em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 50px;
     color: rgb(224, 226, 224);
@@ -28,7 +28,7 @@ header h1 {
 }
 
 header h2 {
-    font: 1em sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 35px;
     color: rgb(224, 226, 224);
@@ -60,7 +60,7 @@ header nav ul li a {
 
 .img {
     display: block;
-    border: 15px solid rgb(224, 226, 224);
+    border: 7px solid black;
     border-radius: 0px;
     padding: 0px;
     width: 300px;
