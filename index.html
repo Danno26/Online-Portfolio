@@ -3,76 +3,88 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/stylesheets.css">
     <title>Daniel T. Juarez</title>
 </head>
 
 <body class="body">
-
     <header class="nav-container">
-        <h1>
-            Daniel T. Juarez
-        </h1>
-        <nav>
-            <h2>
-                <div class="topnav">
-                    <ul>
+        <nav class="navbar">
+            <h1>
+                Daniel T. Juarez
+            </h1>
+
+            <div class="topnav">
+                <h2>
+                    <ul class="nav">
+                        <li><a href="jumbotron">Home</a></li>
                         <li><a href="#about-me">About Me</a></li>
 
                         <li><a href="#work">Projects</a></li>
 
                         <li><a href="#contact-me">Contact Me</a></li>
                     </ul>
-                </div>
-            </h2>
+                </h2>
+            </div>
         </nav>
+        </div>
     </header>
 
     <div class="grid-container-1">
         <section id="about-me">
             <img class="img zoom" src="./assets/pictures/candid_office_pic.jpg" alt="Candid Office Picture" />
             <div class="about-me">
-                <h3>About Me</h3>
+
                 <div class="paragraph">
                     <p class="text1">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <center>
+                            <br class='about-me-para'>What's up and welcome to my portfolio!<br> I'm Daniel and I'm based in Pasadena, California(for now). <br>I am a beginner software developer and am always learning everyday. If I'm not solving a problem
+                            I feel like I am not being productive with my life. I've worked in various high stress environments that have problems that require immediate attention. I am single, have no kids or pets and love to travel. I am easy going
+                            and easy to get along with, feel free to contact me if you have any questions!</center>
                     </p>
                 </div>
             </div>
         </section>
-
-        <div class="grid-container-2">
-            <section id="work">
-                <div class="work">
-                    <h3>Work</h3>
-                    <div class="iframe-div zoom">
-                        <iframe src="Danno26.github.io"></iframe>
-                        <iframe src="Danno26.github.io"></iframe>
-                    </div>
+    </div>
+    <div class="grid-container-2">
+        <section id="work">
+            <div class="work">
+                <h3>Projects</h3>
+                <div class="iframe-div zoom">
+                    <iframe src="Danno26.github.io"></iframe>
+                    <iframe src="Danno26.github.io"></iframe>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+    </div>
 
-        <div class="grid-container-3">
-            <section id="contact-me">
-                <div class="contact-me">
-                    <h3>Contact Me</h3>
-                    <div class="form-info">
-                        <p>Fill out the form and I will contact you at my earliest convenience!</p>
-                        <form>
-                            <label for="name">Enter full name:</label>
-                            <input type="text" placeholder="Your Name" name="name" id="name" class="form-input"><br>
-                            <label for="email">Enter email address:</label>
-                            <input type="text" placeholder="Email Address" name="email" id="email" class="form-input"><br>
-                            <label for="phone">Enter a telephone number:</label>
-                            <input type="text" placeholder="Phone Number" name="phone" id="phone" class="form-input">
-                        </form>
+    <div class="grid-container-3">
+        <section id="contact-me">
+            <h3 class="contact-me">Contact Me</h3>
+            Fill out the form and I will contact you at my earliest convenience!
+            <form class="form-info">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
                     </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    </div>
+                </div><br>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" placeholder="name@example.com" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
-            </section>
-        </div>
+                <br>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">What is this regarding?</label>
+                    <textarea placeholder="Write a brief message." class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </form>
+        </section>
+    </div>
 
 </body>
 <footer>
