@@ -7,6 +7,14 @@
 }
 
 
+/* Megan THEE Stallion voice BODY-ODYODYODY CSS */
+
+.body {
+    background-color: silver;
+    overflow-x: hidden;
+}
+
+
 /* navbar stuff */
 
 nav {
@@ -72,20 +80,12 @@ nav.scroll li a {
 }
 
 
-/* Megan THEE Stallion voice BODY-ODYODYODY CSS */
-
-.body {
-    background-color: silver;
-    overflow-x: hidden;
-}
-
-
 /* banner stuff */
 
 .banner {
     padding-top: 100px;
     width: 100%;
-    background-image: url("./pictures/104193.jpg");
+    background-image: url("./pictures/1280.jpg");
     background-image: cover;
     background-color: black;
 }
@@ -135,14 +135,43 @@ h3 {
     text-align: center;
 }
 
+h4 {
+    position: relative;
+    font-size: 5vw;
+    color: silver;
+    -webkit-text-stroke: 0.3vw whitesmoke;
+    text-transform: uppercase;
+}
+
+h4::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: black;
+    -webkit-text-stroke: 0vw silver;
+    border-right: 2px solid whitesmoke;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+
 .about-me {
     font-size: xx-large;
     margin: 10.5%;
-}
-
-.text1 {
-    font-size: x-large;
-    background-color: silver;
 }
 
 
