@@ -83,7 +83,7 @@ nav.scroll li a {
 /* banner stuff */
 
 .banner {
-    padding-top: 100px;
+    padding-top: 250px;
     width: 100%;
     background-image: url("./pictures/1280.jpg");
     background-image: cover;
@@ -95,7 +95,7 @@ nav.scroll li a {
 
 .img {
     display: block;
-    border: 7px solid black;
+    border: 10px solid black;
     border-radius: 0px;
     padding: 0px;
     width: 300px;
@@ -117,9 +117,23 @@ nav.scroll li a {
 
 /* section label "about me", "projects" and "contact me" */
 
+h1 {
+    margin-top: 5%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    margin: auto;
+}
+
+h2 {
+    margin-top: 5%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    margin: auto;
+}
+
 h3 {
-    margin-top: 12%;
-    background-color: silver;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: x-large;
@@ -137,7 +151,7 @@ h3 {
 
 h4 {
     position: relative;
-    font-size: 5vw;
+    font-size: 4vw;
     color: silver;
     -webkit-text-stroke: 0.3vw whitesmoke;
     text-transform: uppercase;
@@ -177,13 +191,10 @@ h4::before {
 
 /* projects section */
 
-
-/*
 .grid-container-2 {
     display: block;
     border: solid 1px rgb(224, 226, 224);
 }
-*/
 
 .work {
     font-size: xx-large;
@@ -200,19 +211,31 @@ h4::before {
 
 /* contact me section */
 
-
-/*
 .grid-container-3 {
-    border: solid 1px rgb(224, 226, 224);
-    display: inherit;
-}*/
+    border: solid 1px rgb(3, 3, 3);
+    background-image: url("./pictures/inkquillparchment.jpg");
+    padding-top: 250px;
+    width: 100%;
+    background-size: cover;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 250px;
+}
 
 .contact-me {
-    margin: auto;
+    display: inline-block;
 }
 
 .form-info {
     margin: auto;
+}
+
+
+/* need to make a larger text area*/
+
+.textarea {
+    grid-row: span 4;
 }
 
 @media (min-width: 600px) {
