@@ -17,6 +17,10 @@
 
 /* navbar stuff */
 
+
+/* Impliment date and time under my name and add drop down to projects with a list of links to my
+hosted work on github*/
+
 nav {
     font-size: 40px;
     justify-content: space-between;
@@ -95,8 +99,8 @@ nav.scroll li a {
 
 .img {
     display: block;
-    border: 10px solid black;
-    border-radius: 0px;
+    border: .5rem solid black;
+    border-radius: 0rem;
     padding: 0px;
     width: 300px;
     margin: auto;
@@ -141,6 +145,9 @@ h3 {
 
 
 /* about me section */
+
+
+/* I need to get a better bio also fix some text sizing */
 
 .grid-container-1 {
     font-family: 'Times New Roman', Times, serif;
@@ -191,6 +198,10 @@ h4::before {
 
 /* projects section */
 
+
+/* I need to update and get live link to the hosted page on github and to get live gifs that are links
+to the actual project */
+
 .grid-container-2 {
     display: block;
     border: solid 1px rgb(224, 226, 224);
@@ -210,6 +221,10 @@ h4::before {
 
 
 /* contact me section */
+
+
+/* I need to center and create a sleak transparent input form for people who want to write a message
+I also need to fix the sizing structure*/
 
 .grid-container-3 {
     border: solid 1px rgb(3, 3, 3);
