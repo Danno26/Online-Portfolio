@@ -11,6 +11,10 @@
 
 .body {
     background-color: silver;
+    background-image: url("./pictures/vintage-paper-background-3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow-x: hidden;
 }
 
@@ -91,7 +95,9 @@ nav.scroll li a {
     width: 100%;
     background-image: url("./pictures/1280.jpg");
     background-image: cover;
-    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -228,13 +234,8 @@ I also need to fix the sizing structure*/
 
 .grid-container-3 {
     border: solid 1px rgb(3, 3, 3);
-    background-image: url("./pictures/inkquillparchment.jpg");
     padding-top: 250px;
     width: 100%;
-    background-size: cover;
-    background-color: black;
-    background-repeat: no-repeat;
-    background-position: center;
     padding-bottom: 250px;
 }
 
