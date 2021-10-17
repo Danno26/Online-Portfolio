@@ -10,11 +10,3 @@ window.addEventListener('scroll', function() {
         nav.classList.remove('scroll')
     }
 });
-
-// iFrame function attempted with html and javascript 
-
-//var frame = document.getElementById("iframe");
-//frame.onload = function() {
-//    frame.style.height = frame.contentWindow.document.body.scrollHeight + 'px';
-//    frame.style.width = frame.contentWindow.document.body.scrollWidth + 'px';
-//}
