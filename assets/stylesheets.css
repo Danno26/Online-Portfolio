@@ -117,11 +117,11 @@ nav.scroll li a {
 /* the zoom also affects the project images */
 
 .zoom {
-    transition: transform .2s;
+    transition: transform 2s;
 }
 
 .zoom:hover {
-    transform: scale(1.5);
+    transform: scale(2);
 }
 
 
@@ -164,7 +164,7 @@ h3 {
     background-color: wheat;
     width: 100%;
     height: 100%;
-    padding: 50px;
+    padding: 100px;
     position: relative;
     border: solid 5px maroon;
 }
@@ -215,8 +215,7 @@ h4::before {
 /* projects section */
 
 
-/* I need to update and get live link to the hosted page on github and to get live gifs that are links
-to the actual project */
+/* I need to update and get live link to the hosted page on github*/
 
 .grid-container-2 {
     display: inline;
@@ -234,6 +233,15 @@ to the actual project */
     border: solid 5px maroon;
 }
 
+.color-overlay1 {
+    background-color: wheat;
+    width: 80%;
+    height: 100%;
+    padding: 100px;
+    position: relative;
+    border: solid 5px maroon;
+}
+
 
 /* contact me section */
 
@@ -241,27 +249,33 @@ to the actual project */
 /* I need to center and create an input form for people who want to write a message
 I also need to fix the sizing structure*/
 
-.contact-box {
-    border: solid 1px rgb(3, 3, 3);
-    padding-top: 250px;
+.grid-container-3 {
+    display: block;
+    border: solid 1px rgb(224, 226, 224);
+    padding-top: 150px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 150px;
 }
+
+.contact-me {}
 
 .form-info {
     width: 500px;
     background-color: #fff;
-    box-shadow: 0 0 20px 0 #999;
+    box-shadow: 0 0 75px 0 rgb(119, 33, 33);
     position: relative;
-    margin: 35px;
-    margin-left: 35px;
+    margin: auto;
 }
 
 .input-field {
     width: 400px;
     height: 40px;
     margin-top: 20px;
+    margin-left: 50px;
     padding-left: 10px;
     padding-right: 10px;
-    border: 1px solid #777;
+    border: 1px solid black;
     border-radius: 14px;
     outline: none;
 }
@@ -286,7 +300,21 @@ I also need to fix the sizing structure*/
     font-size: 12px;
     border: none;
     cursor: pointer;
+    margin-left: 350px;
+    margin-bottom: 15px;
 }
+
+.color-overlay2 {
+    background-color: wheat;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    position: relative;
+    border: solid 5px maroon;
+}
+
+
+/*responsive set up */
 
 @media (min-width: 600px) {
     .body {

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/stylesheets.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="script.js"></script>
     <title>Daniel T. Juarez</title>
 </head>
 
@@ -31,10 +33,12 @@
                 <h4 data-text="Welcome!">
                     <br>
                 </h4>
-                <div class="color-overlay"> I am a software developer and I'm always learning everyday. I have a solid foundation in the sciences and math.
-                    <br> I enjoy getting up and getting going, I have a knack for staying active. If I'm not solving a problem I feel like I am not being productive with my life. I've worked in various high stress, fast paced environments that encounter
-                    problems that require immediate attention. I am a firm believer that a proper amount of stress or sense of urgency keeps people motivated and active.
-                    <br>As a self-taught developer I am looking for a place where I can compound on my current knowledge and grow from hands on learning and great mentoring.
+                <div class="color-overlay">
+                    <h1>I am a software developer and I'm always learning everyday. I have a solid foundation in the sciences and math.
+                        <br> I enjoy getting up and getting going, I have a knack for staying active. If I'm not solving a problem I feel like I am not being productive with my life. I've worked in various high stress, fast paced environments that encounter
+                        problems that require immediate attention. I am a firm believer that a proper amount of stress or sense of urgency keeps people motivated and active.
+                        <br>As a self-taught developer I am looking for a place where I can compound on my current knowledge and grow from hands on learning and great mentoring.
+                    </h1>
                 </div>
             </div>
         </section>
@@ -42,31 +46,34 @@
 
     <div class="grid-container-2">
         <section id="work">
-            <div class="work">
-                <h3>Stuff I've worked on:</h3>
-                <div class="iframe-div zoom">
+            <div class="work color-overlay1">
+                <h3>Stuff I've worked on / Currently am working on:</h3>
+                <div class="iframe-div">
                     <iframe class="Password-Generator" src="https://danno26.github.io/Password-Generator/" id="Iframe"></iframe>
                     <br>
                 </div>
-                <div>What I'm currently working on:</div>
             </div>
         </section>
     </div>
 
-    <div class="contact-box">
+    <div class="grid-container-3">
         <section id="contact-me">
-            <h3>Feel free to hit me up: Dont worry!
+            <div class="color-overlay2">
+                <h3> Feel free to hit me up: Dont worry!
+                    <p>I'm not paid by anyone to share your information.</p>
+                </h3>
+                <br>
+                <form class="form-info" method="POST">
+                    <input type="text" class="name input-field" placeholder="First and Last Name" required>
+                    <input type="email" class="email input-field" placeholder="name@example.com" required>
+                    <input type="text" class="subject input-field" placeholder="Subject" required>
+                    <textarea type="text" class="message input-field text-area" placeholder="Tell me what you have questions about!" required></textarea>
+                    <div class="status">
 
-                <p>I'm not paid by anyone to share your information. ;)</p>
-            </h3>
-            <br>
-            <form class="form-info">
-                <input type="text" class="input-field" placeholder="First and Last Name" required>
-                <input type="email" class="input-field" placeholder="name@example.com" required>
-                <input type="text" class="input-field" placeholder="Subject" required>
-                <textarea type="text" class="input-field text-area" placeholder="Tell me what you have questions about!" required></textarea>
-                <button type="button" class="btn">Send Message!</button>
-            </form>
+                    </div>
+                    <button type="button" class="btn">Send Message!</button>
+                </form>
+            </div>
         </section>
     </div>
 
