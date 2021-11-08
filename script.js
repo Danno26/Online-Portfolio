@@ -1,15 +1,14 @@
 // navbar scroll function //
-const nav = document.querySelector('nav');
+
 window.addEventListener('scroll', function() {
+    const nav = document.querySelector('nav');
     const offset = window.pageYOffset;
 
     if (offset < 75) {
-        nav.classList.add('scroll')
-    } else {
-        nav.classList.remove('scroll')
+        nav.add('scroll')
     }
 });
-
+/*
 $(document).ready(function() {
     $('.btn').click(function(event) {
         event.preventDefault()
@@ -23,9 +22,9 @@ $(document).ready(function() {
 
 
         if (name.length > 3) {
-            statusElm.append('<div>Name is valid!</div>')
+            statusElm.append('<div> Name is valid! </div>')
         } else {
-            statusElm.append('< div >Name is not valid!< /div>')
+            statusElm.append('<div> Name is not valid! </div>')
         };
 
         if (email.length > 5 && email.includes('@') && email.includes('.')) {
@@ -46,4 +45,43 @@ $(document).ready(function() {
             statusElm.append('<div>Message is not valid!</div>')
         }
     })
-})
+})*/
+
+//listen for a submit //
+document.querySelector(".contact-form").addEventListener("submit", submitForm);
+
+function submitForm(e) {
+    e.preventDefault();
+
+    //Get Input Values
+
+    let name = document.querySelector(".name").value;
+    let email = document.querySelector(".email").value;
+    let subject = document.querySelector(".subject").value;
+    let message = document.querySelector(".message").value;
+
+    saveContactInfo(name, email, subject, message);
+
+    document.querySelector(".contact-form").reset();
+
+    sendEmail(name, email, subject, message);
+
+}
+
+//Save Info
+function saveContactInfo(name, email, subject, message) {
+    let newContactInfo = contactInfo.push();
+
+    newContactInfo.set({
+        name: name,
+        email: email,
+        message: message,
+    });
+
+    retrieveInfos();
+}
+
+//Send Email function 
+function sendEmail(name, email, subject, message) {
+    Email.send()
+}
