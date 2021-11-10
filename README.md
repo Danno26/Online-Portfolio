@@ -1,6 +1,6 @@
 Live Link: 
 
-https://danno26.github.io/Challenge-02/
+https://danno26.github.io/Online-Portfolio/
 
 Challenge 02 Submission Criteria:
 
