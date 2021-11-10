@@ -354,14 +354,14 @@ h4::before {
 
 /*responsive set up */
 
-@media screen (min-width: 600px) {
-    .body {
+@media ( min-width: 600px) {
+    p {
         font-size: 1.25rem;
     }
 }
 
-@media screen (min-wdth: 800x) {
-    .body {
+@media ( min-width: 800px) {
+    p {
         font-size: 1.5rem;
         line-height: 1.5;
     }
