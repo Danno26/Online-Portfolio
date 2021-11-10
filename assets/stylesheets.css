@@ -304,6 +304,10 @@ I also need to fix the sizing structure*/
     margin-bottom: 15px;
 }
 
+.btn:hover {
+    background-color: brown;
+}
+
 .color-overlay2 {
     background-color: wheat;
     width: 100%;
@@ -311,6 +315,41 @@ I also need to fix the sizing structure*/
     padding: 100px;
     position: relative;
     border: solid 5px maroon;
+}
+
+#status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success {
+    background-color: green;
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    background-color: crimson;
+    color: white;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
 

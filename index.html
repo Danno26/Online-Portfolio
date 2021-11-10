@@ -63,17 +63,23 @@
                     <p>I'm not paid by anyone to share your information.</p>
                 </h3>
                 <br>
-                <form class="form-info" method="POST">
-                    <input type="text" class="name input-field" placeholder="First and Last Name" required>
-                    <input type="email" class="email input-field" placeholder="name@example.com" required>
-                    <input type="text" class="subject input-field" placeholder="Subject" required>
-                    <textarea type="text" class="message input-field text-area" placeholder="Tell me what you have questions about!" required></textarea>
-                    <div class="status">
+                <form action="https://formspree.io/f/xoqygaav" class="form-info" method="POST">
+                    <div class="form-group" id="my-form">
+                        <input type="text" name="name" class="name input-field" placeholder="First and Last Name" required>
+                        <input type="email" name="_replyto" class="email input-field" placeholder="name@example.com" required>
+                        <textarea type="text" name="message" class="message input-field text-area" placeholder="Tell me what you have questions about!" required></textarea>
+                        <div class="status">
 
-                    </div>
-                    <button type="button" class="btn">Send Message!</button>
+                        </div>
+                        <button type="submit" id="submit" class="btn" value="send">Send Message!</button>
+
+
                 </form>
+
+                </div>
+                <div id="status" class="success">Message Sent!</div>
             </div>
+
         </section>
     </div>
 
