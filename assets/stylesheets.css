@@ -10,9 +10,9 @@
 /* Megan THEE Stallion voice BODY-ODYODYODY CSS */
 
 .body {
-    background-color: silver;
+    background-color: white;
     background-image: url("./pictures/vintage-paper-background-3.jpg");
-    background-position: center;
+    background-position: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
@@ -155,7 +155,7 @@ h3 {
 
 .grid-container-1 {
     font-family: 'Times New Roman', Times, serif;
-    border: solid 1px rgb(224, 226, 224);
+    border: solid 0px rgb(224, 226, 224);
     align-items: center;
     text-align: center;
 }
@@ -166,7 +166,7 @@ h3 {
     height: 100%;
     padding: 100px;
     position: relative;
-    border: solid 5px maroon;
+    border: solid 2px maroon;
 }
 
 
@@ -219,7 +219,7 @@ h4::before {
 
 .grid-container-2 {
     display: inline;
-    border: solid 1px rgb(224, 226, 224);
+    border: solid 0px rgb(224, 226, 224);
 }
 
 .work {
@@ -230,7 +230,7 @@ h4::before {
     display: inline-flex;
     width: 600px;
     height: 600px;
-    border: solid 5px maroon;
+    border: solid 2px maroon;
 }
 
 .color-overlay1 {
@@ -239,7 +239,7 @@ h4::before {
     height: 100%;
     padding: 100px;
     position: relative;
-    border: solid 5px maroon;
+    border: solid 2px maroon;
 }
 
 
@@ -250,7 +250,7 @@ h4::before {
 
 .grid-container-3 {
     display: block;
-    border: solid 1px rgb(224, 226, 224);
+    border: solid 0px rgb(224, 226, 224);
     padding-top: 150px;
     padding-left: 130px;
     padding-right: 130px;
@@ -304,7 +304,7 @@ h4::before {
 }
 
 .btn:hover {
-    background-color: brown;
+    background-color: maroon;
 }
 
 .color-overlay2 {
@@ -313,7 +313,7 @@ h4::before {
     height: 100%;
     padding: 100px;
     position: relative;
-    border: solid 5px maroon;
+    border: solid 2px maroon;
 }
 
 #status {
@@ -352,17 +352,54 @@ h4::before {
 }
 
 
-/*responsive set up */
+/*responsive set up Media Queries 
 
-@media ( min-width: 600px) {
-    p {
-        font-size: 1.25rem;
+I need to resize fonts and conainers then make sure everything else
+adjusts in column or row appropriate dimensions */
+
+@media only screen and (max-width: 600px) {
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    /* Adjust nav bar, background, text and grid container positioning*/
+    /*NEED HAMBURGER MENU*/
+    nav {
+        font-size: 1vw;
+        justify-content: space-between;
+        color: rgb(224, 226, 224);
+        display: flex;
+        transition: 0.85s;
+        z-index: 100%;
+        width: 100%;
+        padding: 15px 10px;
+        background-image: url("./pictures/cool-gothic.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
-@media ( min-width: 800px) {
-    p {
-        font-size: 1.5rem;
-        line-height: 1.5;
-    }
-}
+@media only screen and (max-width: 768px) {}
+
+
+/*NEED HAMBURGER MENU ?*/
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+
+/* Adjust nav bar, background, text and grid container positioning*/
+
+@media only screen and (max-width: 992px) {}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+
+/* Adjust nav bar, background, text and grid container positioning*/
+
+@media only screen and (max-width: 1200px) {}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+
+/* Adjust nav bar, background, text and grid container positioning*/
