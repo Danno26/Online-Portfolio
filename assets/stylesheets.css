@@ -377,6 +377,13 @@ adjusts in column or row appropriate dimensions */
     }
 }
 
+a {
+    text-decoration: none;
+    color: rgb(224, 226, 224);
+    font-size: 5px;
+    font-weight: lighter;
+}
+
 @media only screen and (max-width: 768px) {}
 
 
